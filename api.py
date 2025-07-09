@@ -20,7 +20,7 @@ def fetch_weather():
             "Zwykla temperatura": stopnie_celsjusza(weather["main"]["temp"]),
             "opis pogody": weather["weather"][0]["description"],
             "miejsce":  weather["name"],
-            "predkosc wiatru": wind_speed(["wind"]["speed"]),
+            "predkosc wiatru": wind_speed(weather["wind"]["speed"]),
             "data pomiaru" : datetime.datetime.now()
         }
         return(data)
