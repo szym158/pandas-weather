@@ -23,7 +23,7 @@ def fetch_weather():
             "predkosc wiatru": wind_speed(weather["wind"]["speed"]),
             "data pomiaru" : datetime.datetime.now()
         }
-        return(data)
+        return data
 
 
     except:

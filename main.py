@@ -12,5 +12,5 @@ while True:
 
     append_to_excel(data)
 
-    time.sleep(45)
+    time.sleep(10)
     print("Pobrano nowe dane")
